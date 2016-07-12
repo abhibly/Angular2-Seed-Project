@@ -59,6 +59,9 @@ npm run build.prod
         main: 'index.js',
         defaultExtension : 'js'
     };
+# Added vaadin dependency in package.json
+ "@vaadin/angular2-polymer": "^1.0.0-beta2"
+ 
 # imported vaadin elements in index.html
 <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 <link rel="import" href="bower_components/vaadin-date-picker/vaadin-date-picker.html">
