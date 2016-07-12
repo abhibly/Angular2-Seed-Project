@@ -27,7 +27,13 @@ export class ProjectConfig extends SeedConfig {
       // {src: `${this.APP_SRC}/your-path-to-lib/libs/jquery-ui.js`, inject: true, vendor: false}
       // {src: `${this.CSS_SRC}/path-to-lib/test-lib.css`, inject: true, vendor: false},
     ];
+    this.SYSTEM_CONFIG_DEV.paths['@vaadin'] =
+      `${this.APP_BASE}node_modules/@vaadin`;
 
+    this.SYSTEM_BUILDER_CONFIG.packages['@vaadin/angular2-polymer'] = {
+        main: 'index.js',
+        defaultExtension : 'js'
+    };
     /* Add to or override NPM module configurations: */
     //this.mergeObject(this.PLUGIN_CONFIGS['browser-sync'], { ghostMode: false });
   }
