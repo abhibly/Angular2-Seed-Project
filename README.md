@@ -49,3 +49,22 @@ npm run build.dev
 # prod build
 npm run build.prod
 ```
+# Changes done for integrating vaadin in seed-project
+```bash
+# Defined dependencies in project.config.ts
+    this.SYSTEM_CONFIG_DEV.paths['@vaadin'] =
+      `${this.APP_BASE}node_modules/@vaadin`;
+
+    this.SYSTEM_BUILDER_CONFIG.packages['@vaadin/angular2-polymer'] = {
+        main: 'index.js',
+        defaultExtension : 'js'
+    };
+# imported vaadin elements in index.html
+<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+<link rel="import" href="bower_components/vaadin-date-picker/vaadin-date-picker.html">
+
+# imported polymer element in a component and defined the element name in directives list
+import { PolymerElement } from '@vaadin/angular2-polymer';
+ directives: [PolymerElement('vaadin-date-picker')]
+ 
+ 
