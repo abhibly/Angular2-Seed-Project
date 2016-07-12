@@ -37,6 +37,8 @@ git clone --depth 1 https://github.com/mgechev/angular2-seed.git
 cd angular2-seed
 # install the project's dependencies
 npm install
+# install polymer dependencies by switching to client folder
+bower install
 # watches your files and uses livereload by default
 npm start
 # api document for the app
