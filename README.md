@@ -66,5 +66,11 @@ npm run build.prod
 # imported polymer element in a component and defined the element name in directives list
 import { PolymerElement } from '@vaadin/angular2-polymer';
  directives: [PolymerElement('vaadin-date-picker')]
+ ```
+ # Error recieved
  
+ ```
+Error: Error: XHR error (404 Not Found) loading http://localhost:5555/node_modules/@vaadin/package.json(…)
+ 
+ ```
  
