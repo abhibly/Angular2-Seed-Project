@@ -74,3 +74,4 @@ Error: Error: XHR error (404 Not Found) loading http://localhost:5555/node_modul
  
  ```
  
+# Code Derived from mgechev/angular2-seed. 
