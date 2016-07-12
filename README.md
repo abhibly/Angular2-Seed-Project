@@ -73,5 +73,5 @@ import { PolymerElement } from '@vaadin/angular2-polymer';
 Error: Error: XHR error (404 Not Found) loading http://localhost:5555/node_modules/@vaadin/package.json(…)
  
  ```
- 
+ # vaadin integration in angular2 tutuorial is found here https://vaadin.com/docs/-/part/elements/angular2-polymer/tutorial-index.html
 # Code Derived from mgechev/angular2-seed. 
